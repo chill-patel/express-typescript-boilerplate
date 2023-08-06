@@ -2,11 +2,11 @@ import express from 'express';
 import helmet from "helmet";
 import compression from 'compression';
 import 'dotenv/config'
-import { ApiError } from './core/exception/api_error';
+import { ApiError } from './exception/api_error';
 import * as HttpStatus from 'http-status';
-import { errorHandler } from './core/middleware/error_handler';
-import { errorConverter } from './core/middleware/error_converter';
-import { userRoute } from './core/modules/user/user.route';
+import { errorHandler } from './middleware/error_handler';
+import { errorConverter } from './middleware/error_converter';
+import { userRoute } from './modules/user/user.route';
 
 console.log()
 
